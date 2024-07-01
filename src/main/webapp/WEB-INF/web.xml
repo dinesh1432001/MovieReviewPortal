@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>MovieReviewPortal</display-name>
+ 
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>loginsucess.jsp</welcome-file>
+    <welcome-file>newuser.jsp</welcome-file>
+    <welcome-file>preview.jsp</welcome-file>
+    <welcome-file>delete.jsp</welcome-file>
+        <welcome-file>edit.jsp</welcome-file>
+        <welcome-file>edit1.jsp</welcome-file>
+         <welcome-file>fp.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+   <display-name>Movo</display-name>
+    <servlet-name>Movo</servlet-name>
+    <servlet-class>com.dine.mov.Movo</servlet-class>
+   </servlet>
+  <servlet-mapping>
+    <servlet-name>Movo</servlet-name>
+    <url-pattern>/Movo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewUser</display-name>
+    <servlet-name>NewUser</servlet-name>
+    <servlet-class>com.dine.mov.NewUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewUser</servlet-name>
+    <url-pattern>/NewUser</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>PostReview</display-name>
+    <servlet-name>PostReview</servlet-name>
+    <servlet-class>com.dine.mov.PostReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostReview</servlet-name>
+    <url-pattern>/PostReview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteReview</display-name>
+    <servlet-name>DeleteReview</servlet-name>
+    <servlet-class>com.dine.mov.DeleteReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteReview</servlet-name>
+    <url-pattern>/DeleteReview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+   <display-name>EditReview</display-name>
+    <servlet-name>EditReview</servlet-name>
+    <servlet-class>com.dine.mov.EditReview</servlet-class>
+   </servlet>
+  <servlet-mapping>
+    <servlet-name>EditReview</servlet-name>
+    <url-pattern>/EditReview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+   <display-name>EditReview1</display-name>
+    <servlet-name>EditReview1</servlet-name>
+    <servlet-class>com.dine.mov.EditReview1</servlet-class>
+   </servlet>
+  <servlet-mapping>
+    <servlet-name>EditReview1</servlet-name>
+    <url-pattern>/EditReview1</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <display-name>ChangePass</display-name>
+    <servlet-name>ChangePass</servlet-name>
+    <servlet-class>com.dine.mov.ChangePass</servlet-class>
+   </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePass</servlet-name>
+    <url-pattern>/ChangePass</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+
